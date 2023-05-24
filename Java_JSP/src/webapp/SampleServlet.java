@@ -20,7 +20,7 @@ public class SampleServlet extends HttpServlet {
 		String animal=animalArray[index];
 		
 		Date date = new Date();
-		SimpleDateFormat sdf = new SimpleDateFormat("MM月日dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日");
 		String today_date = sdf.format(date);
 		
 		// HTMLを出力
