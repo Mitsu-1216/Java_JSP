@@ -1,14 +1,17 @@
 import java.io.IOExseption;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
-
+import java.util.Date;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;
-
+import javax.servlet.http.HttpServletRequest;
 
 @WebServlet("/SampleServlet")
-public class SampleServlet extends HttpServlet{
-	private static final long seriaVersionUID 	= 1L;
-	
+public class SampleServlet extends HttpServlet {
+	private static final long seriaVersionUID = 1L;
+
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response)
 	throws ServletException,IOException{
@@ -33,6 +36,5 @@ public class SampleServlet extends HttpServlet{
 	
 	
 	}
-	
-		
+
 }
