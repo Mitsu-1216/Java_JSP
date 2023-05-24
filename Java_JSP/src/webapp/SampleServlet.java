@@ -17,7 +17,7 @@ public class SampleServlet extends HttpServlet {
 	throws ServletException,IOException{
 		String[] animalArray= {"うさぎ","パンダ","ライオン"};
 		int index =(int)(Math.random()*3);
-		String animal=animalArray[index];
+		String animal = animalArray[index];
 		
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("MM月dd日");
@@ -30,7 +30,7 @@ public class SampleServlet extends HttpServlet {
 		out.println("<head>");
 		out.println("<title>動物選び</title>");
 		out.println("</head>");
-		out.println("<p>"+today+"のアニマルは"+luck+"です！"</p>);
+		out.println("<p>"+today+"のアニマルは" + animal + "です！"</p>);
 		out.println("</body>");
 		out.println("</html>");
 	
