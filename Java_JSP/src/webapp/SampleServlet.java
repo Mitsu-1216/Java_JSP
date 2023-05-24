@@ -32,7 +32,7 @@ public class SampleServlet extends HttpServlet {
 		out.println("<head>");
 		out.println("<title>動物選び</title>");
 		out.println("</head>");
-		out.println("<p>"+today+"のアニマルは" + animal + "です！"</p>);
+		out.println("<p>"+ today +"のアニマルは" + animal + "です！"</p>);
 		out.println("</body>");
 		out.println("</html>");
 	
