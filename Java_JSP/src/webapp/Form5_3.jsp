@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>ユーザ登録</title>
 </head>
 <body>
-
+<form action="/Java_JSP/FormServlet5_3" method="post">
 </body>
 </html>
