@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>ユーザ登録</title>
+<title>ユーザの登録</title>
 </head>
 <body>
-<form action="/Java_JSP/FormServlet5_3" method="post">
+<form action="/example/FormServlet5_3">
+名前:<br>
+<input type="text" name="name"<br>>
+性別;<br>
 </body>
 </html>
