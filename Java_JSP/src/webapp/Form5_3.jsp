@@ -7,7 +7,7 @@
 <title>ユーザの登録</title>
 </head>
 <body>
-<form action="/example/FormServlet5_3">
+<form action="/Java_JSP/FormServlet5_3" method="post">
 名前:<br>
 <input type="text" name="name"><br>
 <br>性別:<br>
