@@ -12,7 +12,7 @@
 <input type="text" name="name"><br>
 <br>性別:<br>
 男<input type="radio" name="gender" value="0">
-女<input type="radio" name="gender" value="0">
+女<input type="radio" name="gender" value="1">
 <input type="submit" value="登録">
 </form>
 </body>
