@@ -31,7 +31,7 @@ public class Servlet6_1 extends HttpServlet {
 		// TODO Auto-generated method stub
 
 		// フォワード
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INFF/jsp/forward6_2.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/forward6_2.jsp");
 		dispatcher.forward(request, response);
 
 		response.getWriter().append("Served at: ").append(request.getContextPath());
