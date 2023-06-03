@@ -7,6 +7,7 @@
 <title>ユーザの登録</title>
 </head>
 <body>
+// フォームをレスポンスする
 <form action="/example/FormServlet5_3">
 名前:<br>
 <input type="text" name="name"<br>>
