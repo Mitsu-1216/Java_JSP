@@ -4,9 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>フォワード</title>
 </head>
 <body>
-
+<h1>フォワフォワ</h1>
+<p>フォワードできたよ！</p>>
 </body>
 </html>
