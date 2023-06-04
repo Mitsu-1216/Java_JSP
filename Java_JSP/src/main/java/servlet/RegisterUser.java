@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import model.RegisterUserLogic;
+import model.User;
 
 @WebServlet("/RegisterUser")
 public class RegisterUser extends HttpServlet {
@@ -29,7 +30,7 @@ public class RegisterUser extends HttpServlet {
 		else if (action.equals("done")) {
 			HttpSession session = request.getSession();
 			User registerUser = (User) session.getAttribute("registerUser");
-			RegisterUerLogic logic = new RegisterUserLogic();
+			RegisterUserLogic logic = new RegisterUserLogic();
 			logic.execute(registerUser);
 
 			session.removeAttribute("registerUser");
@@ -39,7 +40,7 @@ public class RegisterUser extends HttpServlet {
 		}
 
 		RequestDispatcher dispathcer = request.getRequestDispatcher(forwardPath);
-		dispatcher.forward(request, response);
+		dispathcer.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
