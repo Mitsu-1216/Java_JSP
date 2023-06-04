@@ -15,7 +15,7 @@ public class Site implements Serializable {
 		return like;
 	}
 
-	public void setKike(int like) {
+	public void setLike(int like) {
 		this.like = like;
 	}
 
