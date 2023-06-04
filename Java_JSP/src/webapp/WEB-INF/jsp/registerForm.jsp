@@ -10,6 +10,7 @@
 <form action="/Java_JSP/RegisterUser method="post">
 ID：<input type="text" name="id"><br>
 pw：<input type="passwaord" name="pass"><br>
+name：<input type="text" name="name">
 <input type="submit" value="確認">
 </form>
 </body>

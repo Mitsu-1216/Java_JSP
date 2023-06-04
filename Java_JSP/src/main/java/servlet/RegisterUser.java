@@ -25,9 +25,7 @@ public class RegisterUser extends HttpServlet {
 
 		if (action == null) {
 			forwardPath = "/WEB-INF/jsp/registerForm.jsp";
-		}
-
-		else if (action.equals("done")) {
+		} else if (action.equals("done")) {
 			HttpSession session = request.getSession();
 			User registerUser = (User) session.getAttribute("registerUser");
 			RegisterUserLogic logic = new RegisterUserLogic();
