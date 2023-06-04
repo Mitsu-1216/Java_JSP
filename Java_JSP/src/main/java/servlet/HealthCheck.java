@@ -11,9 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.Health;
 import model.HealthCheckLogic;
-/**
- * Servlet implementation class HealthCheck
- */
+
 @WebServlet("/HealthCheck")
 public class HealthCheck extends HttpServlet {
 	private static final long serialVersionUID = 1L;
