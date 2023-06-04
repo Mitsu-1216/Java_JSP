@@ -36,7 +36,7 @@ public class HealthCheck extends HttpServlet {
 		healthCheckLogic.excute(health);
 		request.setAttribute("health",health);
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WBF-INF/jsp/healthCheckResult.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/healthCheckResult.jsp");
 		dispatcher.forward(request, response);
 	}
 
