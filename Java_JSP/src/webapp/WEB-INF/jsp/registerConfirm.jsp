@@ -14,7 +14,7 @@ User registerUser = (User)getAttribute("registerUser");
 <p>下記の内容を登録します</p>
 <p>
 ID：<%= registerUser.getId() %>>
-pw：<%= registerUser.getName() %>>
+name：<%= registerUser.getName() %>>
 </p>
 <a href="/Java_JSP/RegisterUser">戻る</a>
 <a href="/Java_JSP/RegisterUser?action=done">登録</a>
