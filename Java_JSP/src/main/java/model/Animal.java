@@ -5,14 +5,12 @@ public class Animal implements Serializable {
 	private String name;
 	private int age;
 	
-}
 
-public Animal () {
+public Animal () {}
 	public Animal(String name,int age) {
 	// フィールドはカプセル化する
 	this.name=name;
-	this.age=age;
-		
+	this.age=age;	
 	}
 	
 	public String getName() {return name;}
