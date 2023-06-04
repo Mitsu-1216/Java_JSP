@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="model.User" %>
 <% 
-User registerUser = (User)getAttribute("registerUser");
+User registerUser = (User)session.getAttribute("registerUser");
 %>
 <!DOCTYPE html>
 <html>
