@@ -11,12 +11,12 @@ Site site =(Site) application.getAttribute("site");
 <title>ページ</title>
 </head>
 <body>
-<h1>ページへようこそ</h1>
+<h1>ようこそ!</h1>
 <p>
 <a href="/Java_JSP/Index?action=like">Good!</a>:
 <%= site.getLike() %>人
-<a href="/Java_JSP/Index?action=like">Bad!</a>:
-<%= site.getDisike() %>人
+<a href="/Java_JSP/Index?action=dislike">Bad!</a>:
+<%= site.getDislike() %>人
 </p>
 
 </body>
