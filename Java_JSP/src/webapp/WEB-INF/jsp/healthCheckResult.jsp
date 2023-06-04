@@ -16,7 +16,7 @@ Health health = (Health)request.getAttirbute("health");
 身長：<%=health.getHeight() %><br>
 体重：<%=health.getWeight() %><br>
 BMI：<%=health.getBmi() %><br>
-体型：<%=health.getBodytype() %><br>
+体型：<%=health.getBodyType() %><br>
 </p>
 <a href="/Java_JSP/HealthCheck">戻る</a>
 </body>

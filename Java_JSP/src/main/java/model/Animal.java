@@ -8,7 +8,7 @@ public class Animal implements Serializable {
 }
 
 public Animal () {
-	public Human(String name,int age) {
+	public Animal(String name,int age) {
 	// フィールドはカプセル化する
 	this.name=name;
 	this.age=age;
