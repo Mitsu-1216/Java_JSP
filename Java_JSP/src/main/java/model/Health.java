@@ -31,7 +31,7 @@ public class Health implements Serializable {
 		return this.bmi;
 	}
 
-	public void setBodyType(String bodtType) {
+	public void setBodyType(String bodyType) {
 		this.bodyType = bodyType;
 	}
 
