@@ -1,14 +1,15 @@
 package model;
 import java.io.Serializable;
 
-public clask Human implements Serializable {
+public class Animal implements Serializable {
 	private String name;
 	private int age;
 	
 }
 
-public Aonimal () {
+public Animal () {
 	public Human(String name,int age) {
+	// フィールドはカプセル化する
 	this.name=name;
 	this.age=age;
 		
