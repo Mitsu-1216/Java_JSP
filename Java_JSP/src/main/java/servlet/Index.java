@@ -19,9 +19,12 @@ public class Index extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		// アプリケーションスコープに保存されたサイトの評価を取得
 		ServletContext application = this.getServletContext();
 		Site site = (Site) application.getAttribute("site");
 
+		// サイト評価の初期化
 		if (site == null) {
 			site = new Site();
 		}
@@ -29,6 +32,7 @@ public class Index extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String action = request.getParameter("action");
 
+		// サイトの評価処理
 		SiteLogic siteLogic = new SiteLogic();
 		if (action != null && action.equals("like")) {
 			siteLogic.like(site);
@@ -36,12 +40,12 @@ public class Index extends HttpServlet {
 			siteLogic.dislike(site);
 		}
 
+		// アプリケーションスコープにサイト評価を保存
 		application.setAttribute("site", site);
 
+		// フォワード
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/Index.jsp");
-
 		dispatcher.forward(request, response);
-
 	}
 
 }
