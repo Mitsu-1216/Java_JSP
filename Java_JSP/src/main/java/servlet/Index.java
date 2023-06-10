@@ -29,6 +29,7 @@ public class Index extends HttpServlet {
 			site = new Site();
 		}
 
+		// 文字コードセット
 		request.setCharacterEncoding("UTF-8");
 		String action = request.getParameter("action");
 
