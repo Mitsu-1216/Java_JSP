@@ -49,10 +49,10 @@ public class RegisterUser extends HttpServlet {
 		String name = request.getParameter("name");
 		String pass = request.getParameter("pass");
 
-		User registerUser = new User(id, name, pass);
+//		User registerUser = new User(id, name, pass);
 
 		HttpSession session = request.getSession();
-		session.setAttribute("registerUser", registerUser);
+//		session.setAttribute("registerUser", registerUser);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/registerConfirm.jsp");
 
