@@ -15,7 +15,7 @@ List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
 <body>
 <h1>メイン</h1>
 <p>
-<%= loginUser.getName() %>>がログイン中
+<%= loginUser.getName() %>   がログイン中
 <a href="/Java_JSP/Logout">ログアウト</a>
 </p>
 <p><a href="/Java_JSP/Main">更新</a></p>
@@ -24,7 +24,7 @@ List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
 <input type="submit" value="つぶやく">
 </form>
 <% for(Mutter mutter : mutterList) {%>
-<p><%= mutter.getUserName() %>>:<% mutter.getText() %></p>
+<p><%= mutter.getUserName() %> : <% mutter.getText() %></p>
 <% } %>
 </body>
 </html>
