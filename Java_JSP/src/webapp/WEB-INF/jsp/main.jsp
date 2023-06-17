@@ -28,7 +28,8 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 <p><%= errorMsg %></p>
 <% } %>
 <% for(Mutter mutter : mutterList) {%>
-<p><%= mutter.getUserName() %> : <% mutter.getText() %></p>
+<p><%= mutter.getUserName() %> : 
+<%= mutter.getText() %></p>
 <% } %>
 </body>
 </html>
