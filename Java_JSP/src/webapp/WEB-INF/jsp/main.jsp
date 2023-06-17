@@ -20,7 +20,7 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 <a href="/Java_JSP/Logout">ログアウト</a>
 </p>
 <p><a href="/Java_JSP/Main">更新</a></p>
-<form action="Java_JSP/Main" method="post">
+<form action="/Java_JSP/Main" method="post">
 <input type="text" name="text">
 <input type="submit" value="つぶやく">
 </form>
