@@ -9,6 +9,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import model.Mutter;
 import model.User;
 
@@ -18,14 +20,23 @@ import model.User;
 @WebServlet("/Main")
 public class Main extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		ServletContext application = this.getServletContext();
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
+
+		if (mutterList == null) {
+			mutterList = new ArrayList<>();
+			application.setAttribute("mutterList", mutterList);
+		}
+
+		HttpSession session = request.getSession();
+		User loginUser = (User) session.getAttribute("loginUser");
 	}
 
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doGet(request, response);
 	}
 
