@@ -51,7 +51,7 @@ public class Main extends HttpServlet {
 		String text = request.getParameter("text");
 		
 
-		if (text != null && text.length() != 0) {
+		if(text != null && text.length() != 0) {
 
 			ServletContext application = this.getServletContext();
 			List<Mutter> mutterList = (List<Mutter>) application.getAttribute("mutterList");
