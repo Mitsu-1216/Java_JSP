@@ -49,6 +49,7 @@ public class Main extends HttpServlet {
 
 		request.setCharacterEncoding("UTF-8");
 		String text = request.getParameter("text");
+		
 
 		if (text != null && text.length() != 0) {
 
@@ -63,6 +64,8 @@ public class Main extends HttpServlet {
 			postMutterLogic.execute(mutter, mutterList);
 
 			application.setAttribute("mutterList", mutterList);
+		} else {
+			request.setAttribute("errprMs","つぶやきが入力されていません");
 		}
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
